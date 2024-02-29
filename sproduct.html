@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MR7 Store | Detalhe dos Produtos</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+
+    <style>
+        .small-img-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .small-img-col {
+            flex-basis: 24%;
+            cursor: pointer;
+        }
+        .sproduct select {
+            display: block;
+            padding: 5px 10px;
+        }
+
+        .sproduct input {
+            width: 50px;
+            height: 40px;
+            padding-left: 10px;
+            font-size: 16px;
+            margin-bottom: 10px;
+        }
+
+        .sproduct input:focus {
+            outline: none;
+        }
+
+        .buy-btn {
+            background: salmon;
+            opacity: 1;
+            transition: 0.3s all ;
+        }
+    </style>
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top bg-white"
+    >
+      <div class="container">
+        <img class="imgLogo" src="Assets/MR.png" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i id="bar" class="fa-solid fa-bars"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/shop.html">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <a href="/cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="container sproduct my-5 pt-5">
+        <div class="row mt-5">
+            <div class="col-lg-5 col-md-12 col-12">
+                <img class="img-fluid w-100 pb-1" src="./Assets/Camisetas/camiseta_01.jpg" id="MainImg" alt="">
+                
+                <div class="small-img-group">
+                    <div class="small-img-col">
+                        <img src="./Assets/Camisetas/camiseta_01.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./Assets/Camisetas/camiseta_02.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./Assets/Camisetas/camiseta_04.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="./Assets/Camisetas/camiseta_03.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            
+            </div>
+            <div class="col-lg-6 col-md-12 col-12">
+                <h6>Home / Camisetas</h6>
+                <h3 class="py-4 ">Camisa Masculina Quadriculada</h3>
+                <h2>R$ 92,00</h2>
+                <select class="my-3">
+                    <option value="">Selecionar o Tamanho</option>
+                    <option value="">XG</option>
+                    <option value="">GG</option>
+                    <option value="">M</option>
+                    <option value="">P</option>
+                </select>
+                <input type="number" value="1">
+                <button class="buy-btn">Adcionar ao Carrinho</button>
+                <h4 class="mt-5 mb-5">Detalhes do Produto</h4>
+                <span>Para pessoas dinâmicas, brutas e aventureiras, a Camisa Jack Lenhador é uma excelente opção. Ela é uma camisa xadrez 100% algodão, flanelada e muito confortável.
+                    Durável, funcional e confortável, a Camisa Jack Lenhador é 100% algodão e flanelada, com toque suave. Ela é perfeita para ocasiões casuais, para você estar preparado, com qualidade e estilo.
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <section id="featured" class="my-5 pb-5">
+        <div class="container text-center mt-5 py-5">
+          <h3>Outros Produtos</h3>
+          <hr class="mx-auto"/>
+          <!-- <p>Outras pesssoas gostaram também destes produtos MR7Store© </p> -->
+        </div>
+  
+        <div class="row mx-auto container-fluid">
+         
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="./Assets/Sapatos/Sapato_01a.jpeg" alt="">
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h5 class="p-name">Sapato Esportivo</h5>
+            <h4 class="p-price">R$ 92,00</h4>
+            <button class="buy-btn">Compre Agora</button>
+          </div>
+  
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="./Assets/Camisetas/camiseta_02.jpg" alt="">
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h5 class="p-name">Camisa Preta</h5>
+            <h4 class="p-price">R$ 92,00</h4>
+            <button class="buy-btn">Compre Agora</button>
+          </div>
+          
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="./Assets/Mochilas/Mochila_01.jpg" alt="">
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h5 class="p-name">Mochila</h5>
+            <h4 class="p-price">R$ 92,00</h4>
+            <button class="buy-btn">Compre Agora</button>
+          </div>
+          
+          <div class="product text-center col-lg-3 col-md-4 col-12">
+            <img class="img-fluid mb-3" src="./Assets/relogios/relogio_01.jpeg" alt="">
+            <div class="star">
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+              <i class="fa fa-star" aria-hidden="true"></i>
+            </div>
+            <h5 class="p-name">Relógio</h5>
+            <h4 class="p-price">R$ 192,00</h4>
+            <button class="buy-btn">Compre Agora</button>
+          </div>
+        </div>
+      </section>
+
+
+
+
+
+
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img class="imgLogo" src="./Assets/MR.png" alt="" />
+          <p class="pt-3">
+            Uma marca de roupas básicas e simples masculinas pra você se vestir
+            bem e na moda.
+          </p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Apresentação</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="#">Masculinas</a></li>
+            <li><a href="#">Femininas</a></li>
+            <li><a href="#">Garotos</a></li>
+            <li><a href="#">Garotas</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Sapatos</a></li>
+            <li><a href="#">Roupas</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Contato</h5>
+          <div class="">
+            <h6 class="text-uppercase">Endereço</h6>
+            <p>Rua Santa, 123, Glória - SP</p>
+          </div>
+          <div class="">
+            <h6 class="text-uppercase">Fone</h6>
+            <p>(11) 1234-5789</p>
+          </div>
+          <div class="">
+            <h6 class="text-uppercase">Email</h6>
+            <p>mail@example.com</p>
+          </div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instagram</h5>
+          <div class="row">
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Banners/banner_01.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Camisetas/camiseta_03.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Mochilas/mochila_02.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Roupas misc/roupa_03.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Sapatos/sapato_04.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <img
+              class="banner-card"
+              src="./Assets/banner-mercadopago.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+            <p>MR7Store© 2025. Todos direitos reservados</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <a href="#"
+              ><i class="fa fa-facebook-official" aria-hidden="true"></i
+            ></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/61f41a47eb.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+        var MainImg = document.getElementById("MainImg");
+        var smallimg = document.getElementsByClassName("small-img");
+
+        smallimg[0].onclick = function(){
+            MainImg.src = smallimg[0].src;
+        }
+        smallimg[1].onclick = function(){
+            MainImg.src = smallimg[1].src;
+        }
+        smallimg[2].onclick = function(){
+            MainImg.src = smallimg[2].src;
+        }
+        smallimg[3].onclick = function(){
+            MainImg.src = smallimg[3].src;
+        }
+ 
+
+    </script>
+  </body>
+</html>
+

@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MR7 Store | Blog</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="path/to/font-awesome/css/font-awesome.min.css"
+    />
+    
+
+
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary py-3 fixed-top bg-white"
+    >
+      <div class="container">
+        <img class="imgLogo" src="Assets/MR.png" />
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"
+            ><i id="bar" class="fa-solid fa-bars"></i
+          ></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="/index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/shop.html">Loja</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./blog.html">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contato</a>
+            </li>
+            <li class="nav-item">
+              <i class="fa fa-search" aria-hidden="true"></i>
+              <a href="/cart.html"><i class="fa fa-shopping-bag" aria-hidden="true"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section id="blog-home" class="pt-5 mt-5 container">
+        <h2 class="font-weight-bold pt-5">Carrinho de Compras</h2>
+        <hr>
+    </section>
+
+    <section id="cart-container" class="container my-5">
+        <table width="100%">
+            <thead>
+                <tr>
+                    <td>Remover</td>
+                    <td>Imagem</td>
+                    <td>Produto</td>
+                    <td>Preço</td>
+                    <td>Quantidade</td>
+                    <td>Total</td>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><img src="/Assets/Sapatos/Sapato_01a.jpeg" alt=""></td>
+                    <td>
+                        <h5>Sapato Preto</h5>
+                    </td>
+                    <td><h5>R$ 92,00</h5></td>
+                    <td><input class="w-25 pl-1" value="2" type="number"></td>
+                    <td><h5>R$184,00</h5></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><img src="/Assets/Sapatos/sapato_02.jpeg" alt=""></td>
+                    <td>
+                        <h5>Sapato Azul</h5>
+                    </td>
+                    <td><h5>R$ 92,00</h5></td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td><h5>R$92,00</h5></td>
+                </tr>
+                <tr>
+                    <td><a href="#"><i class="fas fa-trash-alt"></i></a></td>
+                    <td><img src="/Assets/Sapatos/sapato_05.jpg" alt=""></td>
+                    <td>
+                        <h5>Sapato Branco</h5>
+                    </td>
+                    <td><h5>R$ 92,00</h5></td>
+                    <td><input class="w-25 pl-1" value="1" type="number"></td>
+                    <td><h5>R$92,00</h5></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section class="container" id="cart-bottom">
+        <div class="row">
+            <div class="coupon col-lg-6 col-md-6 col-12 mb-4 ">
+                <div>
+                    <h5>CUPOM</h5>
+                    <p>Entre seu código de cumpom se tiver algum.</p>
+                    <input type="text" placeholder="Codigo do Cupom">
+                    <button>Aplicar Cupom</button>
+                </div>
+            </div>´
+            <div class="total col-lg-6 col-md-6 col-12 mb-4 ">
+                <div>
+                    <h5>TOTAL DO CARRINHO</h5>
+                    <div class="d-flex justify-content-between">
+                        <h6>Subtotal</h6>
+                        <p>R$ 368,00</p>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <h6>Envio</h6>
+                        <p>R$ 12,00</p>
+                    </div>
+
+                    <hr class="second-hr">
+                    <div class="d-flex justify-content-between">
+                        <h6>Total</h6>
+                        <p>R$ 380,00</p>
+                    </div>
+
+                    <button class="ml-auto">Pagamento</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    
+    
+    <footer class="mt-5 py-5">
+      <div class="row container mx-auto pt-5">
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <img class="imgLogo" src="./Assets/MR.png" alt="" />
+          <p class="pt-3">
+            Uma marca de roupas básicas e simples masculinas pra você se vestir
+            bem e na moda.
+          </p>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Apresentação</h5>
+          <ul class="text-uppercase list-unstyled">
+            <li><a href="#">Masculinas</a></li>
+            <li><a href="#">Femininas</a></li>
+            <li><a href="#">Garotos</a></li>
+            <li><a href="#">Garotas</a></li>
+            <li><a href="#">Novidades</a></li>
+            <li><a href="#">Sapatos</a></li>
+            <li><a href="#">Roupas</a></li>
+          </ul>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12 mb-3">
+          <h5 class="pb-2">Contato</h5>
+          <div class="">
+            <h6 class="text-uppercase">Endereço</h6>
+            <p>Rua Santa, 123, Glória - SP</p>
+          </div>
+          <div class="">
+            <h6 class="text-uppercase">Fone</h6>
+            <p>(11) 1234-5789</p>
+          </div>
+          <div class="">
+            <h6 class="text-uppercase">Email</h6>
+            <p>mail@example.com</p>
+          </div>
+        </div>
+        <div class="footer-one col-lg-3 col-md-6 col-12">
+          <h5 class="pb-2">Instagram</h5>
+          <div class="row">
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Banners/banner_01.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Camisetas/camiseta_03.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Mochilas/mochila_02.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Roupas misc/roupa_03.jpg"
+              alt=""
+            />
+            <img
+              class="img-fluid w-25 h-100 m-2"
+              src="./Assets/Sapatos/sapato_04.jpeg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="copyright mt-5">
+        <div class="row container mx-auto">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
+            <img
+              class="banner-card"
+              src="./Assets/banner-mercadopago.jpg"
+              alt=""
+            />
+          </div>
+          <div class="col-lg-4 col-md-6 col-12 text-nowrap mb-2">
+            <p>MR7Store© 2025. Todos direitos reservados</p>
+          </div>
+          <div class="col-lg-4 col-md-6 col-12">
+            <a href="#"
+              ><i class="fa fa-facebook-official" aria-hidden="true"></i
+            ></a>
+            <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+            <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/61f41a47eb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
+
+<!-- https://www.youtube.com/watch?v=oT0Xy8wU8iY -->
